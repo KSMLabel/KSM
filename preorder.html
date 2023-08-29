@@ -35,6 +35,20 @@
             max-width: 60%;
             height: auto;
         }
+    position: absolute;
+    top: -100px; /* Start above the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    opacity: 0; /* Start with content hidden */
+    animation: fallDown1 1.5s ease forwards;
+}
+
+@keyframes fallDown1 {
+    to {
+        top: 30%; /* End at the center of the viewport */
+        opacity: 1;
+    }
+}
     </style>
 </head>
 <body>
